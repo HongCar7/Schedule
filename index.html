@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
 <title>캘린더 · 할 일</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -116,6 +116,22 @@
   .wk-none{font-size:13px;color:var(--ink-faint);font-weight:300;padding-left:4px}
 
   @media(max-width:820px){ .wrap{grid-template-columns:1fr} }
+  @media(max-width:520px){
+    body{padding:14px}
+    .wrap{gap:16px}
+    .masthead h1{font-size:26px}
+    .panel{padding:16px;border-radius:12px}
+    .grid{gap:3px}
+    .cell{border-radius:8px;font-size:14px}
+    .dot{bottom:6px}
+    .cal-title{font-size:20px}
+    .cal-title .yr{font-size:15px}
+    .add-row{flex-wrap:wrap}
+    .add-row .time{width:110px}
+    .add-row input.txt{flex:1 1 100%;order:3}
+    .add-row button{flex:1}
+    .todo-date{font-size:20px}
+  }
 </style>
 </head>
 <body>
